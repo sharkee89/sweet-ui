@@ -1,0 +1,21 @@
+{
+  "name": "sweet-ui",
+  "version": "1.0.0",
+  "description": "The SweetUI is a front-end library that enhances your interface with simple use of predefined classes and HTML elements.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sharkee",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  }
+}
