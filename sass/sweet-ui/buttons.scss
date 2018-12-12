@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.st-btn {
+.sw-btn {
     padding: 18px;
     text-decoration: none;
     border: none;
@@ -11,32 +11,32 @@
     &:hover {
         box-shadow: 0 2px lightgrey;
     }
-    &.st-btn-prim {
+    &.sw-btn-prim {
         background-color: $primary-color;
         transition: 0.25s linear;
     }
-    &:hover.st-btn-prim {
+    &:hover.sw-btn-prim {
         background-color: $primary-color-light;
     }
-    &.st-btn-success {
+    &.sw-btn-success {
         background-color: $secondary-color;
         transition: 0.25s linear;
     }
-    &:hover.st-btn-success {
+    &:hover.sw-btn-success {
         background-color: $secondary-color-light;
     }
-    &.st-btn-err {
+    &.sw-btn-err {
         background-color: $third-color;
         transition: 0.25s linear;
     }
-    &:hover.st-btn-err {
+    &:hover.sw-btn-err {
         background-color: $third-color-light;
     }
-    &.st-btn-warn {
+    &.sw-btn-warn {
         background-color: $fourth-color;
         transition: 0.25s linear;
     }
-    &:hover.st-btn-warn {
+    &:hover.sw-btn-warn {
         background-color: $fourth-color-light;
     }
     &.inv {
@@ -44,24 +44,24 @@
         transition: 0.25s linear;
         border: 1px solid;
     }
-    &:hover.st-btn-prim.inv, &:hover.st-btn-success.inv, &:hover.st-btn-err.inv, &:hover.st-btn-warn.inv {
+    &:hover.sw-btn-prim.inv, &:hover.sw-btn-success.inv, &:hover.sw-btn-err.inv, &:hover.sw-btn-warn.inv {
         color: #FFFFFF;
     }
-    &.st-btn-prim.inv {
+    &.sw-btn-prim.inv {
         color: $primary-color;
     }
-    &.st-btn-success.inv {
+    &.sw-btn-success.inv {
         color: $secondary-color;
     }
-    &.st-btn-err.inv {
+    &.sw-btn-err.inv {
         color: $third-color;
     }
-    &.st-btn-warn.inv {
+    &.sw-btn-warn.inv {
         color: $fourth-color;
     }
 }
 // Buttons with animation from left to right
-.st-btn-lr {
+.sw-btn-lr {
     position: relative;
     width: fit-content;
     .layer {
@@ -75,44 +75,130 @@
     }
 }
 // Links
-.st-link {
+.sw-link {
     position: relative;
     width: fit-content;
     cursor: pointer;
     a, a:visited, a:hover {
         text-decoration: none;
     }
-    .layer {
+    &.top .layer {
+        position: absolute;
+        top: -0.5em;
+        height: 15%;
+        width: 0;
+        transition: 0.3s linear;
+    }
+    &.bottom .layer {
         position: absolute;
         bottom: -0.5em;
         height: 15%;
         width: 0;
         transition: 0.3s linear;
     }
-    &:hover .layer {
+    &.right .layer {
+        position: absolute;
+        right: -0.5em;
+        height: 0;
+        width: 2.6%;
+        transition: 0.3s linear;
+    }
+    &.left .layer {
+        position: absolute;
+        left: -0.5em;
+        height: 0;
+        width: 2.6%;
+        transition: 0.3s linear;
+    }
+    &:hover.top .layer, &:hover.bottom .layer {
         width: 100%;
     }
-    &.st-link-prim {
+    &:hover.left .layer, &:hover.right  .layer {
+        height: 100%;
+    }
+    &.sw-link-prim {
         color: $primary-color;
         .layer {
             background-color: $primary-color;
         }
     }
-    &.st-link-success {
+    &.sw-link-success {
         color: $secondary-color;
         .layer {
             background-color: $secondary-color;
         }
     }
-    &.st-link-err {
+    &.sw-link-err {
         color: $third-color;
         .layer {
             background-color: $third-color;
         }
     }
-    &.st-link-warn {
+    &.sw-link-warn {
         color: $fourth-color;
         .layer {
+            background-color: $fourth-color;
+        }
+    }
+    // Link with all borders
+    &.all {
+        & > div {
+            background-color: $primary-color;
+        }
+        .tl {
+            position: absolute;
+            top: -0.5em;
+            height: 15%;
+            width: 0;
+            transition: 0.3s linear;
+        }
+        .bl {
+            position: absolute;
+            bottom: -0.5em;
+            height: 15%;
+            width: 0;
+            transition: 0.3s linear;
+        }
+        .rl {
+            position: absolute;
+            right: -0.5em;
+            height: 0;
+            width: 2.6%;
+            transition: 0.3s linear;
+        }
+        .ll {
+            position: absolute;
+            left: -0.5em;
+            height: 0;
+            width: 2.6%;
+            transition: 0.3s linear;
+        }
+    }
+    &.all:hover {
+        .tl, .bl {
+            width: 100%;
+        }
+        .rl, .ll {
+            height: 100%;
+        }
+    }
+    &.sw-link-prim.all {
+        & > div {
+            background-color: $primary-color;
+        }
+    }
+    &.sw-link-success.all {
+        & > div {
+            background-color: $secondary-color;
+        }
+    }
+    &.sw-link-err.all {
+        & > div {
+            background-color: $third-color;
+        }
+    }
+    &.sw-link-warn.all {
+        & > div {
             background-color: $fourth-color;
         }
     }

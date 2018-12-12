@@ -1,20 +1,20 @@
-.st-card-fbg {
+.sw-card-fbg {
   position: relative;
   width: 100%;
   overflow: hidden; }
-  .st-card-fbg .st-card-fbg-bglayer {
+  .sw-card-fbg .sw-card-fbg-bglayer {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; }
-  .st-card-fbg .st-card-fbg-img {
+  .sw-card-fbg .sw-card-fbg-img {
     max-width: 100%;
     transition: 0.2s linear;
     z-index: 0; }
-  .st-card-fbg:hover .st-card-fbg-img {
+  .sw-card-fbg:hover .sw-card-fbg-img {
     transform: scale(1.2); }
-  .st-card-fbg .st-card-fbg-body {
+  .sw-card-fbg .sw-card-fbg-body {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,9 +23,9 @@
     text-align: center;
     width: 80%;
     z-index: 2; }
-    .st-card-fbg .st-card-fbg-body .st-card-fbg-title {
+    .sw-card-fbg .sw-card-fbg-body .sw-card-fbg-title {
       border-bottom: 3px solid orange;
       width: fit-content;
       margin: 0 auto; }
-    .st-card-fbg .st-card-fbg-body .st-card-fbg-text {
+    .sw-card-fbg .sw-card-fbg-body .sw-card-fbg-text {
       margin-bottom: 35px; }

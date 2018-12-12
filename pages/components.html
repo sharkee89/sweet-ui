@@ -34,72 +34,96 @@
                     <h1 class="comp-title">Buttons</h1>
                     <h3 class="comp-title">Simple buttons</h3>
                     <div>
-                        <button class="st-btn st-btn-prim">Button Primary</button>
-                        <button class="st-btn st-btn-success">Button Success</button>
-                        <button class="st-btn st-btn-err">Button Error</button>
-                        <button class="st-btn st-btn-warn">Button Warning</button>
+                        <button class="sw-btn sw-btn-prim">Button Primary</button>
+                        <button class="sw-btn sw-btn-success">Button Success</button>
+                        <button class="sw-btn sw-btn-err">Button Error</button>
+                        <button class="sw-btn sw-btn-warn">Button Warning</button>
                     </div>
                     <div>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-prim"&gtButton Primary&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-success"&gtButton Success&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-err"&gtButton Error&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-prim"&gtButton Primary&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-prim"&gtButton Primary&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-success"&gtButton Success&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-err"&gtButton Error&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-prim"&gtButton Primary&lt/button&gt</code></pre>
                     </div>
                     <h3 class="comp-title">Buttons with no background color</h3>
                     <div>
-                        <button class="st-btn st-btn-prim inv">Button Primary</button>
-                        <button class="st-btn st-btn-success inv">Button Success</button>
-                        <button class="st-btn st-btn-err inv">Button Error</button>
-                        <button class="st-btn st-btn-warn inv">Button Warning</button>
+                        <button class="sw-btn sw-btn-prim inv">Button Primary</button>
+                        <button class="sw-btn sw-btn-success inv">Button Success</button>
+                        <button class="sw-btn sw-btn-err inv">Button Error</button>
+                        <button class="sw-btn sw-btn-warn inv">Button Warning</button>
                     </div>
                     <div>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-prim inv"&gtButton Primary&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-success inv"&gtButton Success&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-err inv"&gtButton Error&lt/button&gt</code></pre>
-                        <pre><code class="html">&ltbutton class="st-btn st-btn-warn inv"&gtButton Primary&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-prim inv"&gtButton Primary&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-success inv"&gtButton Success&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-err inv"&gtButton Error&lt/button&gt</code></pre>
+                        <pre><code class="html">&ltbutton class="sw-btn sw-btn-warn inv"&gtButton Primary&lt/button&gt</code></pre>
                     </div>
-                    <h3 class="comp-title">Link buttons</h3>
+                    <h3 class="comp-title">Link buttons with border animation</h3>
                     <div class="flex-start links">
-                        <div class="st-link st-link-prim"><div class="layer"></div><a>Link Primary</a></div>
-                        <div class="st-link st-link-success"><div class="layer"></div><a>Link Success</a></div>
-                        <div class="st-link st-link-err"><div class="layer"></div><a>Link Error</a></div>
-                        <div class="st-link st-link-warn"><div class="layer"></div><a>Link Warning</a></div>
+                        <div class="sw-link sw-link-prim top"><div class="layer"></div><a>Link Primary Top</a></div>
+                        <div class="sw-link sw-link-success right"><div class="layer"></div><a>Link Success Right</a></div>
+                        <div class="sw-link sw-link-err bottom"><div class="layer"></div><a>Link Error Bottom</a></div>
+                        <div class="sw-link sw-link-warn left"><div class="layer"></div><a>Link Warning Left</a></div>
                     </div>
                     <div>
-                        <pre><code class="html">&ltdiv class="st-link st-link-prim"&gt&ltdiv class="layer"&gt&lt/div&gt&lta&gtLink Primary&lt/a&gt&lt/div&gt</code></pre>
-                        <pre><code class="html">&ltdiv class="st-link st-link-success"&gt&ltdiv class="layer"&gt&lt/div&gt&lta&gtLink Success&lt/a&gt&lt/div&gt</code></pre>
-                        <pre><code class="html">&ltdiv class="st-link st-link-err"&gt&ltdiv class="layer"&gt&lt/div&gt&lta&gtLink Error&lt/a&gt&lt/div&gt</code></pre>
-                        <pre><code class="html">&ltdiv class="st-link st-link-warn"&gt&ltdiv class="layer"&gt&lt/div&gt&lta&gtLink Warning&lt/a&gt&lt/div&gt</code></pre>
+                        <pre><code class="html">&ltdiv class="sw-link sw-link-prim top"&gt&ltdiv class="layer"&gt&lt/div&gt&lta&gtLink Primary Top&lt/a&gt&lt/div&gt // right, bottom, left</code></pre>
+                    </div>
+                    <h3 class="comp-title">Link buttons with all borders animation</h3>
+                    <div class="flex-start links">
+                        <div class="sw-link sw-link-prim all">
+                            <div class="tl"></div><div class="rl"></div><div class="bl"></div><div class="ll"></div>
+                            <a>Link Primary Top</a>
+                        </div>
+                        <div class="sw-link sw-link-success all">
+                            <div class="tl"></div><div class="rl"></div><div class="bl"></div><div class="ll"></div>
+                            <a>Link Primary Top</a>
+                        </div>
+                        <div class="sw-link sw-link-err all">
+                            <div class="tl"></div><div class="rl"></div><div class="bl"></div><div class="ll"></div>
+                            <a>Link Primary Top</a>
+                        </div>
+                        <div class="sw-link sw-link-warn all">
+                            <div class="tl"></div><div class="rl"></div><div class="bl"></div><div class="ll"></div>
+                            <a>Link Primary Top</a>
+                        </div>
+                    </div>
+                    <div>
+                        <pre><code class="html">
+&ltdiv class="sw-link sw-link-prim all"&gt // sw-link-success, sw-link-err, sw-link-warn
+    &ltdiv class="tl"&gt&lt/div&gt&ltdiv class="rl"&gt&lt/div&gt&ltdiv class="bl"&gt&lt/div&gt&ltdiv class="ll"&gt&lt/div&gt
+    &lta&gtLink Primary Top&lt/a&gt
+&lt/div&gt
+                        </code></pre>
                     </div>
                 </div>
                 <div id="cards" class="comp-section cards">
                     <h1 class="comp-title">Cards</h1>
                     <h3 class="comp-title">Card with full background image</h3>
-                    <div class="st-section">
+                    <div class="sw-section">
                         <div class="comp-prev">
-                            <div class="st-card-fbg">
-                                <div class="st-card-fbg-bglayer"></div>
-                                <img class="st-card-fbg-img" src="https://images.all-free-download.com/images/graphicthumb/canoe_water_nature_221611.jpg" alt="">
-                                <div class="st-card-fbg-body">
-                                    <h3 class="st-card-fbg-title">Card title</h3>
-                                    <p class="st-card-fbg-text">Some quick example text to build on the card title and make
+                            <div class="sw-card-fbg">
+                                <div class="sw-card-fbg-bglayer"></div>
+                                <img class="sw-card-fbg-img" src="https://images.all-free-download.com/images/graphicthumb/canoe_water_nature_221611.jpg" alt="">
+                                <div class="sw-card-fbg-body">
+                                    <h3 class="sw-card-fbg-title">Card title</h3>
+                                    <p class="sw-card-fbg-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
                                     <div>
-                                        <button href="#" class="st-btn st-btn-err">Go somewhere</button>
+                                        <button href="#" class="sw-btn sw-btn-err">Go somewhere</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <pre><code class="html">
-&ltdiv class="st-card-fbg"&gt
-&ltdiv class="st-card-fbg-bglayer"&gt&lt/div&gt
-&ltimg class="st-card-fbg-img" src="https://images.all-free-download.com/images/graphicthumb/canoe_water_nature_221611.jpg" alt=""&gt
-&ltdiv class="st-card-fbg-body"&gt
-    &lth3 class="st-card-fbg-title">Card title&lt/h3&gt
-    &ltp class="st-card-fbg-text">Some quick example text to build on the card title and make
+&ltdiv class="sw-card-fbg"&gt
+&ltdiv class="sw-card-fbg-bglayer"&gt&lt/div&gt
+&ltimg class="sw-card-fbg-img" src="https://images.all-free-download.com/images/graphicthumb/canoe_water_nature_221611.jpg" alt=""&gt
+&ltdiv class="sw-card-fbg-body"&gt
+    &lth3 class="sw-card-fbg-title">Card title&lt/h3&gt
+    &ltp class="sw-card-fbg-text">Some quick example text to build on the card title and make
         up the bulk of the card's content.&lt/p&gt
     &ltdiv>
-        &ltbutton href="#" class="st-btn st-btn-err"&gtGo somewhere&lt/button&gt
+        &ltbutton href="#" class="sw-btn sw-btn-err"&gtGo somewhere&lt/button&gt
     &lt/div&gt
     &lt/div&gt
 &lt/div&gt
