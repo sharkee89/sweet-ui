@@ -1,6 +1,6 @@
 {
   "name": "sweet-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The SweetUI is a front-end library that enhances your interface with simple use of predefined classes and HTML elements.",
   "main": "server.js",
   "scripts": {
